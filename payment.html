@@ -361,7 +361,7 @@
     <main>
         <div class="reward-box" style="position: relative;">
 
-            <div class="plan-header">ONE TIME ACTIVATION</div>
+            <div class="plan-header">ONE TIME ONBOARDING</div>
             <div class="price-container">
                 <div class="old-price">₦25,000<br></div>
                 <div class="new-price" id="display-amount">₦14,500</div>
@@ -447,8 +447,8 @@
     function startTimer(duration, display) {
         let timer = duration, minutes, seconds;
         setInterval(function () {
-            minutes = parseInt(timer / 60, 20);
-            seconds = parseInt(timer % 60, 20);
+            minutes = parseInt(timer / 30, 10);
+            seconds = parseInt(timer % 60, 10);
             minutes = minutes < 10 ? "0" + minutes : minutes;
             seconds = seconds < 10 ? "0" + seconds : seconds;
             display.textContent = minutes + ":" + seconds;
