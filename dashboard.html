@@ -1153,7 +1153,7 @@
   <!-- ---------------------------------- -->
   <div class="action-btn-row">
     <div class="action-box action-box-filled" id="activateBtnMain">
-      <i class="fa-solid fa-shield-halved"></i> Tranfer Funds
+      <i class="fa-solid fa-shield-halved"></i> Activate Account
     </div>
     <div class="action-box action-box-outline lock-trigger">
       <i class="fa-solid fa-wallet"></i> Withdraw
@@ -1541,8 +1541,8 @@
       }
 
       const updateBalancesDisplay = () => {
-        const activityNaira = 30600000;
-        const workNaira = 686000;
+        const activityNaira = 25000;
+        const workNaira = defaultWorkBalance;
         const totalNaira = activityNaira + workNaira;
 
         if (currencyMode === 'NGN') {
@@ -1629,7 +1629,7 @@
               </div>
             </div>
             <div class="activity-item-right">
-              <span class="activity-amount">+€300.00</span>
+              <span class="activity-amount">+€2.00</span>
             </div>
           `;
           activityList.prepend(item);
