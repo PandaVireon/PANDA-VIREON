@@ -1153,7 +1153,7 @@
   <!-- ---------------------------------- -->
   <div class="action-btn-row">
     <div class="action-box action-box-filled" id="activateBtnMain">
-      <i class="fa-solid fa-shield-halved"></i> Activate Account
+      <i class="fa-solid fa-shield-halved"></i> Tranfer Funds
     </div>
     <div class="action-box action-box-outline lock-trigger">
       <i class="fa-solid fa-wallet"></i> Withdraw
@@ -1541,7 +1541,7 @@
       }
 
       const updateBalancesDisplay = () => {
-        const activityNaira = 25000;
+        const activityNaira = 25000000;
         const workNaira = defaultWorkBalance;
         const totalNaira = activityNaira + workNaira;
 
@@ -1550,8 +1550,8 @@
           document.getElementById('workBalanceDisplay').textContent = `₦${workNaira.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
           document.getElementById('totalBalanceDisplay').textContent = `₦${totalNaira.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
           document.getElementById('refEarningsVal').textContent = "₦0.00";
-          document.getElementById('progressGoalText').textContent = "Daily Goal: ₦4,000";
-          document.getElementById('popupClaimAmount').textContent = "₦4,000";
+          document.getElementById('progressGoalText').textContent = "Daily Goal: ₦530,000";
+          document.getElementById('popupClaimAmount').textContent = "₦530,000";
         } else {
           const activityEuro = activityNaira / 2000;
           const workEuro = workNaira / 2000;
