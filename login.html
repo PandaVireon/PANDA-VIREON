@@ -24,11 +24,13 @@
             align-items: center;
         }
 
-        .cyan-text {
-            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+        .topbar-logo {
+    height: 32px;         /* Change this number (e.g., 50px, 60px) to make it bigger or smaller */
+    width: auto;          /* Keeps your logo from stretching or looking distorted */
+    object-fit: contain;  /* Ensures it scales smoothly */
+}
+        .logo-container { display: flex; align-items: center; gap: 20px; text-decoration: none; }
+
 
         .cyan-border-card {
             background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
@@ -218,9 +220,10 @@
 </head>
 <body class="p-6">
 
-    <div class="max-w-md mx-auto w-full">
-        <div class="text-center mb-10">
-            <h1 class="text-5xl font-black italic cyan-text uppercase tracking-tighter mb-2">VIREON</h1>
+    <div class="topbar">
+        <a href="index.html" class="logo-container">
+            <img class="topbar-logo" src="logo.png" alt="vireon logo">
+        </a>
             <p class="text-gray-500 text-[10px] uppercase tracking-[0.5em] font-bold">Secure Member Access</p>
         </div>
 
